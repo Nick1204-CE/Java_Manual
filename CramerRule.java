@@ -22,11 +22,15 @@ class CramerRule
 		D=a*d-b*c;
 		Dx=e*d-d*f;
 		Dy=a*f-c*e;
+		if(D==0){
+			System.out.println("Arithmetic Exception");
+		}else{
 		x=Dx/D;
 		y =Dy/D;  
 		System.out.println("x="+x);
 		System.out.println("y="+y  );
-
+		}
 
 	}
+
 }
